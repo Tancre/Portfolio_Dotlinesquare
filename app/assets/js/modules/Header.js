@@ -3,6 +3,7 @@ class Header extends HTMLElement {
         super()  
         this.innerHTML =`
         <header class="menu">
+            <div class"menu__right"><a id="whoIam" href="#">Who I am</a></div>
             <h1 class="menu__title"><a id="mainTitle" href="#">dotlinesqr</a></h1>
             <nav> 
                 <ul>
