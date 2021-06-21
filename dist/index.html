@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/App.js"></script>
+    <script src="../p5js/lib/p5.min.js"></script>
+</head>
+<body>
+
+    <my-header></my-header>
+
+    <script type="text/javascript">
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            var mobileError = document.getElementById('error');
+            mobileError.style.visibility = "visible"; 
+        } else {
+            var srcArray = ["../p5js/sketches/dotMouseDim.js",
+                "../p5js/sketches/circleRandom.js",
+                "../p5js/sketches/dotGridMouse.js",
+                "../p5js/sketches/linesparty.js",
+                "../p5js/sketches/dropCircle.js"
+            ]
+            var script = document.createElement('script');
+            var num = Math.floor(Math.random() * srcArray.length);
+            script.src = srcArray[num];
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+    </script> 
+</body>
+</html> 

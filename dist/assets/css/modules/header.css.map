@@ -1,0 +1,1 @@
+{"version":3,"sources":["modules/header.scss"],"names":[],"mappings":"AAAA,OAEI,YAAa,CACb,YAAa,CAFb,WAEa","file":"header.css","sourcesContent":["header {\n    width: 300px;\n    height: 100vh;\n    padding: 30px;\n}"]}
