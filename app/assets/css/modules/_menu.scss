@@ -11,7 +11,7 @@
   }
 
   &__title {
-    font-family: "Poppins-Bold", Sans-Serif;
+    font-family: "Poppins-SemiBold", Sans-Serif;
     font-size: 2.5rem;
     margin-top: 0;
   }
@@ -33,6 +33,7 @@
     & a {
       font-size: 1rem;
       transition: letter-spacing 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
 
       &:hover {
         letter-spacing: 1px;
@@ -51,7 +52,7 @@
 
     & img {
       width: 30px;
-      transition: transform 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         transform: rotate(180deg);

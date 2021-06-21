@@ -32,7 +32,21 @@ function setup() {
   frameRate(10);
 
   title = select("#mainTitle");
-  project1 = select("#project1"); 
+
+  project1 = select("#project1");
+  project2 = select("#project2"); 
+  project3 = select("#project3"); 
+  project4 = select("#project4"); 
+  project5 = select("#project5"); 
+  project6 = select("#project6");  
+  project7 = select("#project7"); 
+  project8 = select("#project8"); 
+  project9 = select("#project9"); 
+
+  projectX = select("#projectX"); 
+  projectY = select("#projectY"); 
+
+  refresh = select("#refresh");
 }
 
 function draw(){
@@ -58,9 +72,53 @@ function settings(){
 }
 
 function effects(){
+  console.log(dimx);
 
-//     if (windowWidth > 800 && windowWidth < 1540){
-//     if (dimx > 1210) { 
+  if (dimx > 1600) { 
+    title.style("color","#fff" );
+
+    project1.style("color","#fff" );
+    project3.style("color","#fff" );
+    project5.style("color","#fff" );
+    project6.style("color","#fff" );
+    project7.style("color","#fff" );
+    project8.style("color","#fff" );
+
+    projectX.style("color","#fff" );
+    projectY.style("color","#fff" );
+  } else {
+    title.style("color","#000" );
+
+    project1.style("color","#000" );
+    project3.style("color","#000" );
+    project5.style("color","#000" );
+    project6.style("color","#000" );
+    project7.style("color","#000" );
+    project8.style("color","#000" );
+
+    projectX.style("color","#000" );
+    projectY.style("color","#000" );
+  }
+
+  if (dimx > 1725) {
+    project2.style("color","#fff" );
+    refresh.style("filter","invert(100%)");
+  } else {
+    project2.style("color","#000" );
+    refresh.style("filter","invert(0%)");
+  }
+
+  if (dimx > 1813) {
+    project4.style("color","#fff" );
+  } else {
+    project4.style("color","#000" );
+  }
+
+  if (dimx > 1855) {
+    project9.style("color","#fff" );
+  } else {
+    project9.style("color","#000" );
+  }
 //       menu1.style("color","#fff" );
 //       menu2.style("color","#fff" );
 //       menu3.style("color","#fff" );
@@ -135,6 +193,4 @@ function effects(){
 //     } else {
 //       refresh.style("opacity","1");
 //     }    
-
-//   } 
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script type="module" src="./assets/js/App.js"></script>
     <script src="../p5js/lib/p5.min.js"></script>
+    
 </head>
 <body>
 
@@ -18,11 +19,11 @@
             var mobileError = document.getElementById('error');
             mobileError.style.visibility = "visible"; 
         } else {
-            var srcArray = ["../p5js/sketches/dotMouseDim.js",
-                "../p5js/sketches/circleRandom.js",
-                "../p5js/sketches/dotGridMouse.js",
-                "../p5js/sketches/linesparty.js",
-                "../p5js/sketches/dropCircle.js"
+            var srcArray = ["../p5js/sketches/dotMouseDim.js"
+                // "../p5js/sketches/circleRandom.js",
+                // "../p5js/sketches/dotGridMouse.js",
+                // "../p5js/sketches/linesparty.js",
+                // "../p5js/sketches/dropCircle.js"
             ]
             var script = document.createElement('script');
             var num = Math.floor(Math.random() * srcArray.length);
