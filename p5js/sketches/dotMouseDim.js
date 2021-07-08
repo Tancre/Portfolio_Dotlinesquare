@@ -5,7 +5,6 @@ var title;
 var project9;
 var project8;
 var project7;
-var project6;
 var project5;
 var project4;
 var project3;
@@ -17,7 +16,7 @@ var projectY;
 var refresh;
 
 var refresh;
-// var whoiam;
+var whoiam;
 
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
@@ -38,7 +37,6 @@ function setup() {
   project3 = select("#project3"); 
   project4 = select("#project4"); 
   project5 = select("#project5"); 
-  project6 = select("#project6");  
   project7 = select("#project7"); 
   project8 = select("#project8"); 
   project9 = select("#project9"); 
@@ -47,6 +45,7 @@ function setup() {
   projectY = select("#projectY"); 
 
   refresh = select("#refresh");
+  whoiam = select("#whoiam");
 }
 
 function draw(){
@@ -75,58 +74,62 @@ function effects(){
   console.log(dimx);
 
   if (dimx > 1600) { 
-    title.style("color","#fff" );
+    title.style("filter","invert(100%)");
 
-    project1.style("color","#fff" );
-    project3.style("color","#fff" );
-    project5.style("color","#fff" );
-    project6.style("color","#fff" );
-    project7.style("color","#fff" );
-    project8.style("color","#fff" );
+    project1.style("filter","invert(100%)");
+    project3.style("filter","invert(100%)");
+    project5.style("filter","invert(100%)");
+    project7.style("filter","invert(100%)");
+    project8.style("filter","invert(100%)");
 
-    projectX.style("color","#fff" );
-    projectY.style("color","#fff" );
+    projectX.style("filter","invert(100%)");
+    projectY.style("filter","invert(100%)");
   } else {
-    title.style("color","#000" );
+    title.style("filter","invert(0%)");
 
-    project1.style("color","#000" );
-    project3.style("color","#000" );
-    project5.style("color","#000" );
-    project6.style("color","#000" );
-    project7.style("color","#000" );
-    project8.style("color","#000" );
+    project1.style("filter","invert(0%)");
+    project3.style("filter","invert(0%)");
+    project5.style("filter","invert(0%)");
+    project7.style("filter","invert(0%)");
+    project8.style("filter","invert(0%)");
 
-    projectX.style("color","#000" );
-    projectY.style("color","#000" );
+    projectX.style("filter","invert(0%)");
+    projectY.style("filter","invert(0%)");
   }
 
   if (dimx > 1725) {
-    project2.style("color","#fff" );
+    project2.style("filter","invert(100%)");
     refresh.style("filter","invert(100%)");
   } else {
-    project2.style("color","#000" );
+    project2.style("filter","invert(0%)");
     refresh.style("filter","invert(0%)");
   }
 
   if (dimx > 1813) {
-    project4.style("color","#fff" );
+    project4.style("filter","invert(100%)");
   } else {
-    project4.style("color","#000" );
+    project4.style("filter","invert(0%)");
+  }
+
+  if (dimx > 1821) {
+    whoiam.style("color","rgb(255,255,255)");
+  } else {
+    whoiam.style("color","");
   }
 
   if (dimx > 1855) {
-    project9.style("color","#fff" );
+    project9.style("filter","invert(100%)"); 
   } else {
-    project9.style("color","#000" );
+    project9.style("filter","invert(0%)");
   }
-//       menu1.style("color","#fff" );
-//       menu2.style("color","#fff" );
-//       menu3.style("color","#fff" );
-//       // menu4.style("color","#fff" );
-//       // menu5.style("color","#fff" );
-//       menu6.style("color","#fff" );
-//       logo.style("color","#fff" );
-//       whoiam.style("color","#fff" );
+//       menu1.style("filter","invert(100%)");
+//       menu2.style("filter","invert(100%)");
+//       menu3.style("filter","invert(100%)");
+//       // menu4.style("filter","invert(100%)");
+//       // menu5.style("filter","invert(100%)");
+//       menu6.style("filter","invert(100%)");
+//       logo.style("filter","invert(100%)");
+//       whoiam.style("filter","invert(100%)");
 //     } else {
 //       menu1.style("color","" );
 //       menu2.style("color","" );
@@ -139,13 +142,13 @@ function effects(){
 //     }
 
 //     if (dimx > 1300) { 
-//       logo.style("color","#fff" );
+//       logo.style("filter","invert(100%)");
 //     } else {
 //       logo.style("color","" );
 //     }
 
 //     if (dimx > 1410) { 
-//       whoiam.style("color","#fff" );
+//       whoiam.style("filter","invert(100%)");
 //     } else {
 //       whoiam.style("color","" );
 //     }
@@ -158,14 +161,14 @@ function effects(){
 //   } 
 //   else {
 //      if (dimx > 1620) { 
-//       menu1.style("color","#fff" );
-//       menu2.style("color","#fff" );
-//       menu3.style("color","#fff" );
-//       // menu4.style("color","#fff" );
-//       // menu5.style("color","#fff" );
-//       menu6.style("color","#fff" );
-//       logo.style("color","#fff" );
-//       whoiam.style("color","#fff" );
+//       menu1.style("filter","invert(100%)");
+//       menu2.style("filter","invert(100%)");
+//       menu3.style("filter","invert(100%)");
+//       // menu4.style("filter","invert(100%)");
+//       // menu5.style("filter","invert(100%)");
+//       menu6.style("filter","invert(100%)");
+//       logo.style("filter","invert(100%)");
+//       whoiam.style("filter","invert(100%)");
 //     } else {
 //       menu1.style("color","" );
 //       menu2.style("color","" );
@@ -178,13 +181,13 @@ function effects(){
 //     }
 
 //     if (dimx > 1750) { 
-//       logo.style("color","#fff" );
+//       logo.style("filter","invert(100%)");
 //     } else {
 //       logo.style("color","" );
 //     }
 
 //     if (dimx > 1820) { 
-//       whoiam.style("color","#fff" );
+//       whoiam.style("filter","invert(100%)");
 //     } else {
 //       whoiam.style("color","" );
 //     }
@@ -193,4 +196,11 @@ function effects(){
 //     } else {
 //       refresh.style("opacity","1");
 //     }    
+}
+function onTop() {
+  whoiam.style('color', 'red');
+}
+ 
+function outside() {
+  whoiam.style('color', 'white');
 }

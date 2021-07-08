@@ -1,0 +1,22 @@
+.button {
+  color: #f8384c;
+  border-color: #f8384c;
+  border: solid 3px;
+  background: transparent;
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 10px 10px 10px 12px;
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 8px;
+  margin-right: 4px;
+
+  &:hover {
+    color: white;
+    border-color: #fa132a;
+    background-color: #fa132a;
+  }
+}

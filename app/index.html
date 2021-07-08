@@ -8,28 +8,36 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script type="module" src="./assets/js/App.js"></script>
     <script src="../p5js/lib/p5.min.js"></script>
-    
+    <script type="text/javascript">
+        on_index = true;
+    </script>   
 </head>
 <body>
 
     <my-header></my-header>
 
+    <my-footer></my-footer>
+
     <script type="text/javascript">
+    
+        var srcArray = ["../p5js/sketches/dotMouseDim.js",
+            "../p5js/sketches/circleRandom.js",
+            "../p5js/sketches/dotGridMouse.js",
+            "../p5js/sketches/linesparty.js",
+            "../p5js/sketches/dropCircle.js"
+        ]
+
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             var mobileError = document.getElementById('error');
             mobileError.style.visibility = "visible"; 
         } else {
-            var srcArray = ["../p5js/sketches/dotMouseDim.js"
-                // "../p5js/sketches/circleRandom.js",
-                // "../p5js/sketches/dotGridMouse.js",
-                // "../p5js/sketches/linesparty.js",
-                // "../p5js/sketches/dropCircle.js"
-            ]
             var script = document.createElement('script');
             var num = Math.floor(Math.random() * srcArray.length);
             script.src = srcArray[num];
             document.getElementsByTagName('head')[0].appendChild(script);
         }
+
+
     </script> 
 </body>
 </html> 

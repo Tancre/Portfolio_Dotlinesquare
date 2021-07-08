@@ -1,0 +1,22 @@
+.foot {
+  font-family: "Worksans-SemiBold", Sans-Serif;
+  width: 500px;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50%;
+  right: -200px;
+  text-align: center;
+
+  & a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: red !important;
+      font-size: 2.4rem;
+    }
+  }
+}

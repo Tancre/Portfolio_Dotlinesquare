@@ -17,6 +17,18 @@
 }
 
 @font-face {
+  font-family: "Worksans-SemiBold";
+  src: url("http://127.0.0.1:5500/dist/assets/media/fonts/Worksans/WorkSans-SemiBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Worksans-Medium";
+  src: url("http://127.0.0.1:5500/dist/assets/media/fonts/Worksans/WorkSans-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
   font-family: "Worksans-Regular";
   src: url("http://127.0.0.1:5500/dist/assets/media/fonts/Worksans/WorkSans-Regular.ttf")
     format("truetype");
