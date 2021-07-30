@@ -29,7 +29,7 @@ class Header extends HTMLElement {
             `
 
         var refresh = '<a class="menu__refresh" href="javascript:location.reload(true)" ><img id="refresh" alt="Random Sketch" src="./assets/media/imgs/refresh.png"></a>'
-        var refreshNone = '<a class="menu__refresh hide"><img id="refresh" alt="Random Sketch" src="./assets/media/imgs/refresh.png"></a>'
+        var refreshNone = '<a class="menu__refresh invisible"><img id="refresh" alt="Random Sketch" src="./assets/media/imgs/refresh.png"></a>'
         var end = '</header>' 
 
 

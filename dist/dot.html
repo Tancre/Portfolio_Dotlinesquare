@@ -15,7 +15,7 @@
 
     <my-header></my-header>
 
-    <article class="project noSelect">
+    <article id="dot" class="project noSelect">
         <h2 class="project__title">The Dot</h2>
         <h3 class="project__subtitle project__subtitle--dark">A visual phenomenology extending Basic Design theory</h3>
         <p class="project__description ">
@@ -23,10 +23,20 @@
             This research project unfold a theory of visual representations based on the ontological nature of space/form as a singular entity. <br><br>
             The methodology used aims at describing visual phenomena from 4 points of view: <br><i>theory - static image - moving image - interaction</i>
         </p>
-        <div class="gif"></div>
-        <a href="./dotBook.html" class="button"><strong>Book</strong></a>
-        <a href="./dorArtworks.html" class="button"><strong>Artworks</strong></a>
-        <a href="./dorVideo.html" class="button"><strong>Video</strong></a>
+
+        <div id="dotBook" class="project__section" >
+            <div class="gif"></div>
+        </div>
+        
+        <div id="dotArtworks" class="project__section">nice artworks!</div>
+        <div id="dotVideo" class="project__section">nice video!</div>
+        
+        <div class="project__btns">
+            <button id="Book" class="btn btnLink">Book</button>
+            <button id="Artworks" class="btn btnLink">Artworks</button>
+            <button id="Video" class="btn btnLink">Video</button>
+        </div>
+        
     </article>
 
 </body>

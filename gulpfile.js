@@ -43,9 +43,11 @@ gulp.task('cssTask', function () {
 // JS Task
 gulp.task('jsTask', function() {
     return src(sourcePaths.js)
-    .pipe( webpack(webpackConfig, null, function (err, stats) {
-        if (err) { console.log(err); }
-    })) // .on('error', function (err) { if(err){ console.log(err.message);} })
+    .pipe( webpack(webpackConfig, null, function (err, stats) {}))
+    .on('error', function handleError(err) {
+        console.log(err.message);
+        this.emit('end'); // Recover from errors
+      })
     .pipe(dest(outputPaths.js));
 });
 

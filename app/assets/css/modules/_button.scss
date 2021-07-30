@@ -1,4 +1,4 @@
-.button {
+.btn {
   color: #f8384c;
   border-color: #f8384c;
   border: solid 3px;
@@ -13,10 +13,17 @@
   transition: all 0.4s ease-in-out;
   margin-bottom: 8px;
   margin-right: 4px;
+  cursor: pointer;
 
   &:hover {
     color: white;
     border-color: #fa132a;
     background-color: #fa132a;
+  }
+
+  &--is-highlighted {
+    color: white !important;
+    border-color: #fa132a !important;
+    background-color: #fa132a !important;
   }
 }

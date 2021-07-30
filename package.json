@@ -22,6 +22,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "p5js": "^1.2.15"
   }
