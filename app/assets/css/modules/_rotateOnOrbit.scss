@@ -1,0 +1,36 @@
+.orbit {
+  position: absolute;
+  margin: 0 24% 0 40%;
+  top: 32%;
+  width: 400px;
+  height: 400px;
+  transform: rotate(0deg) translateY(-50%);
+  transition: transform 0.7s infinite;
+  animation: spinParent 50s infinite linear;
+}
+
+.planet {
+  position: absolute;
+  font-size: 1rem;
+  transform: rotate(0deg);
+  transition: transform 0.7s infinite;
+  animation: spinChild 50s infinite linear;
+}
+
+@keyframes spinParent {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinChild {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

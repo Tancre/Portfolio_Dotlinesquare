@@ -11,7 +11,9 @@ class ButtonLink {
 
 	toggleSection(){
 		this.btnsWrap.on('click', '.btnLink', function() {
-            var idSection = "#dot" + this.id;
+            var idProject = $('.project').attr('id');
+            var idBtn = this.id;
+            var idSection = "#" + idProject + idBtn;
             var section = $(idSection);
             section.toggleClass("project__section--is-visible"); 
         }); 
@@ -26,16 +28,16 @@ class ButtonLink {
     hideVisibleSections() {
         this.btnsWrap.on('click', '.btnLink', function() {
             var visibleSections = $('.project__section');
-            visibleSections.not(this).removeClass("project__section--is-visible");
+            visibleSections.removeClass("project__section--is-visible");
         });
     }
 
     hideHiglightedBtns() {
         this.btnsWrap.on('click', '.btnLink', function() {
-            var highlightedBtns = $(.btn');
-            highlightedBtns.not(this).removeClass("btn--is-highlighted");
+            var highlightedBtns = $('.btn');
+            highlightedBtns.removeClass("btn--is-highlighted");
         });
     }
 }
 
-export default ButtonLink;
+export default ButtonLink
