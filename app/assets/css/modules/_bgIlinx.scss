@@ -1,0 +1,107 @@
+.waveBg {
+  font-family: "Lucida Console", Monaco, monospace !important;
+  background-color: #151515 !important;
+  background: radial-gradient(
+      15px 5px at 25% 0,
+      transparent 0%,
+      transparent 80%,
+      rgba(255, 255, 255, 0.06) 80%,
+      rgba(255, 255, 255, 0.06) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      15px 5px at 75% 100%,
+      transparent 0%,
+      transparent 80%,
+      rgba(255, 255, 255, 0.06) 80%,
+      rgba(255, 255, 255, 0.06) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      10px 3px at 25% 0,
+      transparent 0%,
+      transparent 70%,
+      rgba(255, 255, 255, 0.05) 70%,
+      rgba(255, 255, 255, 0.05) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      10px 3px at 75% 100%,
+      transparent 0%,
+      transparent 70%,
+      rgba(255, 255, 255, 0.05) 70%,
+      rgba(255, 255, 255, 0.05) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      30px 8px at 25% 0,
+      transparent 0%,
+      transparent 55%,
+      rgba(255, 255, 255, 0.02) 55%,
+      rgba(255, 255, 255, 0.02) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      30px 8px at 75% 100%,
+      transparent 0%,
+      transparent 55%,
+      rgba(255, 255, 255, 0.02) 55%,
+      rgba(255, 255, 255, 0.02) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    #c4cbc3;
+  background-size: 60px 40px, 60px 40px, 40px 24px, 40px 24px, 120px 64px,
+    120px 64px;
+  background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%,
+    50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  -webkit-animation: wave 5s linear infinite;
+  animation: wave 5s linear infinite;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  }
+  20% {
+    background-position: 51% 48%, 51% 48%, 53% 52%, 53% 52%, 48% 47%, 48% 47%;
+  }
+  40% {
+    background-position: 49% 51%, 49% 51%, 48% 51%, 48% 51%, 54% 50%, 54% 50%;
+  }
+  60% {
+    background-position: 53% 54%, 53% 54%, 46% 54%, 46% 54%, 53% 46%, 53% 46%;
+  }
+  80% {
+    background-position: 51% 52%, 51% 52%, 49% 49%, 49% 49%, 49% 48%, 49% 48%;
+  }
+  0% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  }
+  20% {
+    background-position: 51% 48%, 51% 48%, 53% 52%, 53% 52%, 48% 47%, 48% 47%;
+  }
+  40% {
+    background-position: 49% 51%, 49% 51%, 48% 51%, 48% 51%, 54% 50%, 54% 50%;
+  }
+  60% {
+    background-position: 53% 54%, 53% 54%, 46% 54%, 46% 54%, 53% 46%, 53% 46%;
+  }
+  80% {
+    background-position: 51% 52%, 51% 52%, 49% 49%, 49% 49%, 49% 48%, 49% 48%;
+  }
+  0% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  }
+}
